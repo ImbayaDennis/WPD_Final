@@ -172,7 +172,7 @@ $(document).ready(function()
         const xaxis = [];
         const yaxix = [];
         const url_1 = "https://api.teleport.org/api/urban_areas/slug:glasgow/scores/";
-        const url_2 = "https://api.teleport.org/api/urban_areas/slug:nairobi/scores/";
+        const url_2 = "https://api.teleport.org/api/urban_areas/slug:lagos/scores/";
         const url_3 = "https://api.teleport.org/api/urban_areas/slug:nairobi/scores/";
 
         if(city == 1)
@@ -198,7 +198,7 @@ $(document).ready(function()
 
             xaxis.push(economy, living, safety, tolerance, health, education);
             yaxix.push(econLabel, livLabel, safetyLabel, toleLabel, healthLabel,eduLabel)
-            return {xaxis, yaxix,};
+            return {xaxis, yaxix};
         }
         else if(city == 2)
         {
@@ -223,7 +223,7 @@ $(document).ready(function()
 
             xaxis.push(economy, living, safety, tolerance, health, education);
             yaxix.push(econLabel, livLabel, safetyLabel, toleLabel, healthLabel,eduLabel)
-            return {xaxis, yaxix,};
+            return {xaxis, yaxix};
         }
         else if(city == 3)
         {
@@ -248,7 +248,7 @@ $(document).ready(function()
 
             xaxis.push(economy, living, safety, tolerance, health, education);
             yaxix.push(econLabel, livLabel, safetyLabel, toleLabel, healthLabel,eduLabel)
-            return {xaxis, yaxix,};
+            return {xaxis, yaxix};
         }
     }
 
@@ -286,6 +286,11 @@ $(document).ready(function()
                             gridLines: {
                                 offsetGridLines: true
                             }
+                        }],
+                        xAxes: [{
+                            ticks: {
+                                beginAtZero: true
+                            }
                         }]
                     }
                 }
@@ -322,9 +327,14 @@ $(document).ready(function()
                 options: 
                 {
                     scales: {
-                        xAxes: [{
+                        yAxes: [{
                             gridLines: {
                                 offsetGridLines: true
+                            }
+                        }],
+                        xAxes: [{
+                            ticks: {
+                                beginAtZero: true
                             }
                         }]
                     }
@@ -362,9 +372,14 @@ $(document).ready(function()
                 options: 
                 {
                     scales: {
-                        xAxes: [{
+                        yAxes: [{
                             gridLines: {
                                 offsetGridLines: true
+                            }
+                        }],
+                        xAxes: [{
+                            ticks: {
+                                beginAtZero: true
                             }
                         }]
                     }

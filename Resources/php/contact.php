@@ -1,14 +1,9 @@
-<?php
-include_once 'db_conn.php';
-
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/WPD_Final/Resources/css/main.css">   
+    <link rel="stylesheet" href="/WPD_Final/Resources/css/main.css">
     <title>Relocate | Contact</title>
 </head>
 <body>    
