@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/WPD_Final/Resources/css/main.css">
+    <title>Relocate | Home</title>
+</head>
+<body>    
+    <header>
+        <nav>
+            <div class ="menu-bars">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+        </nav>
+    
+        <div class ="menu" style="width: 0%;">
+            <div class="overlay">
+                <a href="#"><h2>Home</h2></a>
+                <a href="about.html"><h2>About</h2></a>
+                <a href="/WPD_Final/Resources/php/contact.php"><h2>Contact</h2></a>
+            </div>
+        </div>
+
+        <div class="hero-text-overlay"></div>
+
+        <div class ="hero-text">
+            <h1>Relocate</h1>
+            <h3>Let's find you a new home</h3>
+            <br><br>
+            <a href="#nairobi">Get Started</a>
+        </div>
+    </header>
+
+    <section id="glasgow">
+        <button class="accordion"><h2>Glasgow</h2></button>
+        <div class="panel">
+            <div class="info">
+                <div class="img">
+                    <img src="/WPD_Final/Resources/imgs/Glasgow.jpg" alt="">
+                </div>
+                
+                <div class="container">
+                    <p>
+                        Glasgow is the largest city in Scotland and the fourth-largest in the UK; with a population of about 625,000 
+                        (2018) in the city and 1,700,000 in the urban agglomeration (2018). Located at the west end of Scotland's Central 
+                        Belt on the banks of the River Clyde, Glasgow's historical importance as Scotland's main industrial centre has been 
+                        challenged by decades of socio-economic and political change alongside various regeneration efforts. Despite this, 
+                        Glasgow remains one of the nation's key economic centres outside of London. Glasgow was awarded the European titles 
+                        of City of Culture (1990), City of Architecture and Design (1999) and Capital of Sport (2003).
+                        <br><a href="https://en.wikivoyage.org/wiki/Glasgow">Source</a>
+                    </p>
+                </div>
+            </div>
+            
+            <div class="row">
+                <h2>Data</h2>
+            </div>
+
+            <div id="map">
+
+            </div>
+
+            <div class="data">
+                <div class="graph">
+                    <div>
+                        <h2>Perfomance Indeces</h2>
+                        <canvas id="indeces_g"></canvas>
+                    </div>
+                </div>
+
+                <div class="graph">
+                    <div class="score">
+                        <h2>overal score</h2>
+                        <div>
+                            <span id="score_1">20</span><span id="out_of">/ 100</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="weather">
+                <h2>Weather Forecast</h2>
+
+                <div class="weather_">
+                    <div class="weather_widget" id="day1">
+                        <div class="weatherIcon"><span class="wi wi-day-cloudy"></span></div>
+                        <div class="weatherInfo">
+                            <div class="temperature"><span id="day_1_min">25&deg;</span><span id="day_1_max">25&deg;</span></div>  
+                            <div id="weatherCondition_1">CLOUDY</div>    
+                        </div>
+                        <div id ="date_1">1st Jan</div>
+                    </div>
+
+                    <div class="weather_widget" id="day2">
+                        <div class="weatherIcon"><span class="wi wi-day-cloudy"></span></div>
+                        <div class="weatherInfo">
+                            <div class="temperature"><span id="day_2_min">25&deg;</span><span id="day_2_max">25&deg;</span></div>  
+                            <div id="weatherCondition_2">CLOUDY</div>    
+                        </div>
+                        <div id ="date_2">1st Jan</div>
+                    </div>
+
+                    <div class="weather_widget" id="day3">
+                        <div class="weatherIcon"><span class="wi wi-day-cloudy"></span></div>
+                        <div class="weatherInfo">
+                            <div class="temperature"><span id="day_3_min">25&deg;</span><span id="day_3_max">25&deg;</span></div>  
+                            <div id="weatherCondition_3">CLOUDY</div>    
+                        </div>
+                        <div id ="date_3">1st Jan</div>
+                    </div>
+
+                    <div class="weather_widget" id="day4">
+                        <div class="weatherIcon"><span class="wi wi-day-cloudy"></span></div>
+                        <div class="weatherInfo">
+                            <div class="temperature"><span id="day_4_min">25&deg;</span><span id="day_4_max">25&deg;</span></div>  
+                            <div id="weatherCondition_4">CLOUDY</div>    
+                        </div>
+                        <div id ="date_4">1st Jan</div>
+                    </div>
+
+                    <div class="weather_widget" id="day5">
+                        <div class="weatherIcon"><span class="wi wi-day-cloudy"></span></div>
+                        <div class="weatherInfo">
+                            <div class ="temperature"><span id="day_5_min">25&deg;</span><span id="day_5_max">25&deg;</span></div>  
+                            <div id="weatherCondition_5">CLOUDY</div>    
+                        </div>
+                        <div id ="date_5">1st Jan</div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="porl-louis">
+        <button class="accordion"><h2>Port Louis</h2></button>
+        <div class="panel">
+            <div class="info">
+                <div class="img">
+                    <img src="/WPD_Final/Resources/imgs/Mauritius.jpg" alt="">
+                </div>
+                
+                <div class="container">
+                    <p>
+                        Port Louis was founded about 1736 by the French as a calling place for ships rounding the Cape of Good Hope 
+                        (South Africa) on the passage between Asia and Europe. British occupation of the island during the Napoleonic 
+                        Wars (1800–15) was a strategic factor in securing control of the Indian Ocean, but the opening of the Suez Canal 
+                        in 1869 resulted in the port being bypassed by shipping. Port activity increased during the closure of the Suez 
+                        Canal (1967–75), and the harbour was modernized in the late 1970s. The city is the central collecting and clearing 
+                        point for all imports and exports from Mauritius and its dependencies and is connected by road to the rest of the 
+                        island. Sugar exports, once the mainstay of the economy, have been superceded in importance by manufacturing 
+                        (notably textiles) and services (notably tourism).
+                        <br><a href="https://www.britannica.com/place/Port-Louis">Source</a>
+                    </p>
+                </div>
+            </div>
+            
+            <div class="row">
+                <h2>Data</h2>
+            </div>
+
+            <div id="map_2">
+
+            </div>
+
+            <div class="data">
+                <div class="graph">
+                    <div>
+                        <h2>Perfomance Indeces</h2>
+                        <canvas id="indeces_p"></canvas>
+                    </div>
+                </div>
+
+                <div class="graph">
+                    <div class="score">
+                        <h2>overal score</h2>
+                        <div>
+                            <span id="score_2">20</span><span id="out_of">/ 100</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="weather">
+                <h2>Weather Forecast</h2>
+
+                <div class="weather_">
+                    <div class="weather_widget" id="day1">
+                        <div class="weatherIcon"><span class="wi wi-day-cloudy"></span></div>
+                        <div class="weatherInfo">
+                            <div class="temperature"><span id="day_1_min_2">25&deg;</span><span id="day_1_max_2">25&deg;</span></div>  
+                            <div id="weatherCondition_1_2">CLOUDY</div>    
+                        </div>
+                        <div id ="date_1_2">1st Jan</div>
+                    </div>
+
+                    <div class="weather_widget" id="day2">
+                        <div class="weatherIcon"><span class="wi wi-day-cloudy"></span></div>
+                        <div class="weatherInfo">
+                            <div class="temperature"><span id="day_2_min_2">25&deg;</span><span id="day_2_max_2">25&deg;</span></div>  
+                            <div id="weatherCondition_2_2">CLOUDY</div>    
+                        </div>
+                        <div id ="date_2_2">1st Jan</div>
+                    </div>
+
+                    <div class="weather_widget" id="day3">
+                        <div class="weatherIcon"><span class="wi wi-day-cloudy"></span></div>
+                        <div class="weatherInfo">
+                            <div class="temperature"><span id="day_3_min_2">25&deg;</span><span id="day_3_max_2">25&deg;</span></div>  
+                            <div id="weatherCondition_3_2">CLOUDY</div>    
+                        </div>
+                        <div id ="date_3_2">1st Jan</div>
+                    </div>
+
+                    <div class="weather_widget" id="day4">
+                        <div class="weatherIcon"><span class="wi wi-day-cloudy"></span></div>
+                        <div class="weatherInfo">
+                            <div class="temperature"><span id="day_4_min_2">25&deg;</span><span id="day_4_max_2">25&deg;</span></div>  
+                            <div id="weatherCondition_4_2">CLOUDY</div>    
+                        </div>
+                        <div id ="date_4_2">1st Jan</div>
+                    </div>
+
+                    <div class="weather_widget" id="day5">
+                        <div class="weatherIcon"><span class="wi wi-day-cloudy"></span></div>
+                        <div class="weatherInfo">
+                            <div class ="temperature"><span id="day_5_min_2">25&deg;</span><span id="day_5_max_2">25&deg;</span></div>  
+                            <div id="weatherCondition_5_2">CLOUDY</div>    
+                        </div>
+                        <div id ="date_5_2">1st Jan</div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="nairobi">
+        <button class="accordion"><h2>Nairobi</h2></button>
+        <div class="panel">
+            <div class="info">
+                <div class="img">
+                    <img src="/WPD_Final/Resources/imgs/Nairobi.jpeg" alt="">
+                </div>
+                
+                <div class="container">
+                    <p>
+                        The word Nairobi is derived from a water hole known in Maasai as Enkare Nyorobi, which means "cool waters". 
+                        Nairobi, which had been a swamp area, was founded in 1899 as a railway camp for the Uganda Railway. By 1905, 
+                        the city had become the capital of Kenya (then the British East Africa Protectorate), supplanting Mombasa and 
+                        Machakos, the previous capitals. With the spread of plagues in the early 1900s, the town was burnt down and 
+                        had to be rebuilt. Having a railway helped it to grow rapidly, becoming the second largest city in Kenya behind 
+                        Mombasa. Nairobi also grew due to administration and tourism businesses (mostly big game hunting).
+                        <br><a href="https://en.wikivoyage.org/?curid=23734">Source</a>
+                    </p>
+                </div>
+            </div>
+            
+            <div class="row">
+                <h2>Data</h2>
+            </div>
+
+            <div id="map_3">
+
+            </div>
+
+            <div class="data">
+                <div class="graph">
+                    <div>
+                        <h2>Perfomance Indeces</h2>
+                        <canvas id="indeces_n"></canvas>
+                    </div>
+                </div>
+
+                <div class="graph">
+                    <div class="score">
+                        <h2>overal score</h2>
+                        <div>
+                            <span id="score_3">20</span><span id="out_of">/ 100</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="weather">
+                <h2>Weather Forecast</h2>
+
+                <div class="weather_">
+                    <div class="weather_widget" id="day1">
+                        <div class="weatherIcon"><span class="wi wi-day-cloudy"></span></div>
+                        <div class="weatherInfo">
+                            <div class="temperature"><span id="day_1_min_3">25&deg;</span><span id="day_1_max_3">25&deg;</span></div>  
+                            <div id="weatherCondition_1_3">CLOUDY</div>    
+                        </div>
+                        <div id ="date_1_3">1st Jan</div>
+                    </div>
+
+                    <div class="weather_widget" id="day2">
+                        <div class="weatherIcon"><span class="wi wi-day-cloudy"></span></div>
+                        <div class="weatherInfo">
+                            <div class="temperature"><span id="day_2_min_3">25&deg;</span><span id="day_2_max_3">25&deg;</span></div>  
+                            <div id="weatherCondition_2_3">CLOUDY</div>    
+                        </div>
+                        <div id ="date_2_3">1st Jan</div>
+                    </div>
+
+                    <div class="weather_widget" id="day3">
+                        <div class="weatherIcon"><span class="wi wi-day-cloudy"></span></div>
+                        <div class="weatherInfo">
+                            <div class="temperature"><span id="day_3_min_3">25&deg;</span><span id="day_3_max_3">25&deg;</span></div>  
+                            <div id="weatherCondition_3_3">CLOUDY</div>    
+                        </div>
+                        <div id ="date_3_3">1st Jan</div>
+                    </div>
+
+                    <div class="weather_widget" id="day4">
+                        <div class="weatherIcon"><span class="wi wi-day-cloudy"></span></div>
+                        <div class="weatherInfo">
+                            <div class="temperature"><span id="day_4_min_3">25&deg;</span><span id="day_4_max_3">25&deg;</span></div>  
+                            <div id="weatherCondition_4_3">CLOUDY</div>    
+                        </div>
+                        <div id ="date_4_3">1st Jan</div>
+                    </div>
+
+                    <div class="weather_widget" id="day5">
+                        <div class="weatherIcon"><span class="wi wi-day-cloudy"></span></div>
+                        <div class="weatherInfo">
+                            <div class ="temperature"><span id="day_5_min_3">25&deg;</span><span id="day_5_max_3">25&deg;</span></div>  
+                            <div id="weatherCondition_5_3">CLOUDY</div>    
+                        </div>
+                        <div id ="date_5_3">1st Jan</div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <span class="back-to-top">
+        <a href="#">
+            <div class="up-arrow">
+                <div class="handle-l"></div>
+                <div class="handle-r"></div>
+            </div>
+        </a>
+    </span>
+
+    <footer>
+        <div class="container">
+            <h5>Dennis Finch Imbaya &copy; 2020</h5>
+        </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+    <script src="/WPD_Final/Resources/js/script.js"></script>
+    <script src="/WPD_Final/Resources/js/apiData.js"></script>
+</body>
+</html>
