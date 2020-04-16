@@ -169,10 +169,11 @@ $(document).ready(function()
     //Get city data from apis and display in graph
     async function getData(city)
     {
-        const xaxis = [];
-        const yaxix = [];
+        var xaxis = [];
+        var yaxix = [];
         const url_1 = "https://api.teleport.org/api/urban_areas/slug:glasgow/scores/";
-        const url_2 = "https://api.teleport.org/api/urban_areas/slug:lagos/scores/";
+        //Port-louis is not a teleport city yet, so I pulled data for Cape Town instead just to show that the graph are working
+        const url_2 = "https://api.teleport.org/api/urban_areas/slug:cape-town/scores/";
         const url_3 = "https://api.teleport.org/api/urban_areas/slug:nairobi/scores/";
 
         if(city == 1)
@@ -299,7 +300,7 @@ $(document).ready(function()
 
     async function createGraph_2()
     {
-        const data = await getData(1)
+        const data = await getData(2)
 
         const index_chart_1 = document.getElementById('indeces_p').getContext('2d');
         const myChart = new Chart(index_chart_1,
