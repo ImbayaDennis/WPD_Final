@@ -385,5 +385,11 @@ $(document).ready(function()
                     }
                 }
         });
+
+        function beforePrintHandler () {
+        for (var id in Chart.instances) {
+            Chart.instances[id].resize();
+        }
+    }
     }
 });
