@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/WPD_Final/Resources/css/main.css">   
+    <link rel="stylesheet" href="/WPD_Final/Resources/css/main.css">
     <title>Relocate | Contact</title>
 </head>
 <body>    
@@ -20,7 +20,7 @@
             <div class="overlay">
                 <a href="../../index.html"><h2>Home</h2></a>
                 <a href="../../about.html"><h2>About</h2></a>
-                <a href="contact.php"><h2>Contact</h2></a>
+                <a href="#"><h2>Contact</h2></a>
             </div>
         </div>
 
@@ -30,7 +30,15 @@
     </header>
 
     <div class="contact_form">
-        <p>There was an error sending your message</p>
+        <form action="message_success.html" method="post">
+            <label for="name">Enter Your Full Name</label><br><br>
+            <input type="text" name="name" placeholder="Full Name" required><br><br>
+            <label for="email">Enter Email Address</label><br><br>
+            <input type="text" name="email" placeholder="E-mail Address" required><br><br>
+            <label for="message">Enter your Message here</label><br><br>
+            <textarea name="message" placeholder="Message" required></textarea><br><br>
+            <input type="submit" value="Submit">
+        </form>
     </div>
     
     <span class="back-to-top">

@@ -7,7 +7,11 @@
 
     $sql = "INSERT INTO contact_info (uname, email, info) VALUES ('$name', '$email', '$message');";
 
-    $state = mysqli_query($conn, $sql);
+    if($name && $email && $message != null || $name && $email && $message != " ")
+    {
+        $state = mysqli_query($conn, $sql);
+    }
+    
     if($state)
     {
         header("Location: message_success.php?mesage=success");
