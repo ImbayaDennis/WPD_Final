@@ -75,9 +75,10 @@ $(document).ready(function()
         getWeatherData(i, 5);
     }
 
-    createGraph_1();
-    createGraph_2();
-    createGraph_3();
+    for(var x = 1; x < 4; x++)
+    {
+        createGraph(x);
+    }
 
    async function getWeatherData(city ,day)
     {
@@ -171,6 +172,7 @@ $(document).ready(function()
     {
         var xaxis = [];
         var yaxix = [];
+
         const url_1 = "https://api.teleport.org/api/urban_areas/slug:glasgow/scores/";
         //Port-louis is not a teleport city yet, so I pulled data for Cape Town instead just to show that the graph are working
         const url_2 = "https://api.teleport.org/api/urban_areas/slug:cape-town/scores/";
@@ -253,9 +255,9 @@ $(document).ready(function()
         }
     }
 
-    async function createGraph_1()
+    async function createGraph(x)
     {
-        const data = await getData(1)
+        const data = await getData(x)
 
         const index_chart_1 = document.getElementById('indeces_g').getContext('2d');
         const myChart = new Chart(index_chart_1,
@@ -296,101 +298,5 @@ $(document).ready(function()
                     }
                 }
         });
-    }
-
-    async function createGraph_2()
-    {
-        const data = await getData(2)
-
-        const index_chart_1 = document.getElementById('indeces_p').getContext('2d');
-        const myChart = new Chart(index_chart_1,
-            {
-                type: 'horizontalBar',
-                data: 
-                {
-                    labels: data.yaxix,
-                    datasets: [{
-                        label: "Scores out of 10",
-                        data: data.xaxis,
-                        borderWidth: 0, 
-                        backgroundColor: 
-                            [
-                                'rgba(111, 116, 240, 0.7)',
-                                'rgba(131, 96, 220, 0.7)',
-                                'rgba(151, 76, 200, 0.7)',
-                                'rgba(171, 56, 180, 0.7)',
-                                'rgba(191, 36, 160, 0.7)',
-                                'rgba(201, 16, 140, 0.7)'
-                            ]
-                    }]
-                },
-
-                options: 
-                {
-                    scales: {
-                        yAxes: [{
-                            gridLines: {
-                                offsetGridLines: true
-                            }
-                        }],
-                        xAxes: [{
-                            ticks: {
-                                beginAtZero: true
-                            }
-                        }]
-                    }
-                }
-        });
-    }
-
-    async function createGraph_3()
-    {
-        const data = await getData(3)
-
-        const index_chart_1 = document.getElementById('indeces_n').getContext('2d');
-        const myChart = new Chart(index_chart_1,
-            {
-                type: 'horizontalBar',
-                data: 
-                {
-                    labels: data.yaxix,
-                    datasets: [{
-                        label: "Scores out of 10",
-                        data: data.xaxis,
-                        borderWidth: 0,
-                        backgroundColor: 
-                            [
-                                'rgba(111, 116, 240, 0.7)',
-                                'rgba(131, 96, 220, 0.7)',
-                                'rgba(151, 76, 200, 0.7)',
-                                'rgba(171, 56, 180, 0.7)',
-                                'rgba(191, 36, 160, 0.7)',
-                                'rgba(201, 16, 140, 0.7)'
-                            ]
-                    }]
-                },
-
-                options: 
-                {
-                    scales: {
-                        yAxes: [{
-                            gridLines: {
-                                offsetGridLines: true
-                            }
-                        }],
-                        xAxes: [{
-                            ticks: {
-                                beginAtZero: true
-                            }
-                        }]
-                    }
-                }
-        });
-
-        function beforePrintHandler () {
-        for (var id in Chart.instances) {
-            Chart.instances[id].resize();
-        }
-    }
     }
 });
