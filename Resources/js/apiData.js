@@ -81,9 +81,9 @@ $(document).ready(function()
 
    async function getWeatherData(city ,day)
     {
-            const url_1 = "http://dataservice.accuweather.com/forecasts/v1/daily/5day/328226?apikey=oS152H6tFLAwJDF1RjHnDXIKr56AtTQs&language=en-us&details=false&metric=false";
-            const url_2 = "http://dataservice.accuweather.com/forecasts/v1/daily/5day/234826?apikey=oS152H6tFLAwJDF1RjHnDXIKr56AtTQs&language=en-us&details=false&metric=false";
-            const url_3 = "http://dataservice.accuweather.com/forecasts/v1/daily/5day/224758?apikey=oS152H6tFLAwJDF1RjHnDXIKr56AtTQs&language=en-us&details=false&metric=false";
+            const url_1 = "https://dataservice.accuweather.com/forecasts/v1/daily/5day/328226?apikey=oS152H6tFLAwJDF1RjHnDXIKr56AtTQs&language=en-us&details=false&metric=false";
+            const url_2 = "https://dataservice.accuweather.com/forecasts/v1/daily/5day/234826?apikey=oS152H6tFLAwJDF1RjHnDXIKr56AtTQs&language=en-us&details=false&metric=false";
+            const url_3 = "https://dataservice.accuweather.com/forecasts/v1/daily/5day/224758?apikey=oS152H6tFLAwJDF1RjHnDXIKr56AtTQs&language=en-us&details=false&metric=false";
             const index = day - 1;
 
             if(city == 1)
